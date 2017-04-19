@@ -1,0 +1,3 @@
+# ANGULARJS - Template 
+
+pour démarrer un projet Angular 1.6 basé sur les composants et sur les services...

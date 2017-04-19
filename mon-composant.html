@@ -1,0 +1,36 @@
+<!--<div ng-show="$ctrl.user">
+   {{$ctrl.user}} <br/>
+	mon mot de passe : {{$ctrl.user.password}}
+</div>
+
+<div ng-show="$ctrl.error">{{ $ctrl.error }}</div>-->
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>WildCloudTchat</a>
+    </div>
+</nav>
+
+<div class="container"><br>
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel">
+                
+                    <div ng-repeat="x in $ctrl.chatAll" | orderBy: '-id'>
+                        <span class="blue-text text-darken-2"><big>{{x.pseudo}} 
+                        </big><br>{{x.content}}</span><br><div>
+                        <small>
+                       
+                           Ce message à étais voté {{x.vote }} fois. <a ng-click="$ctrl.voteAdd(x.id,$ctrl.pseudo,x.vote)">Voter</a><br>
+                        
+
+                        ____________________________
+                    </div>
+            </div>
+        </div>
+        <div class="col s6"><input type="text" ng-model="$ctrl.pseudo" placeholder="Tape ton pseudo"></div>
+        <div class="col s6"><input type="text" ng-model="$ctrl.message" placeholder="Ecrit ton message"></div>
+        <center><a ng-click="$ctrl.addChat($ctrl.pseudo,$ctrl.message);" href="#">J'envoye</a></center>
+        {{$ctrl.msg}}
+    </div>
+</div>

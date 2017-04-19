@@ -1,3 +1,4 @@
-# ANGULARJS - Template 
+# ANGULARJS - CHAT 
 
-pour démarrer un projet Angular 1.6 basé sur les composants et sur les services...
+Simple tchat avec la possibilité de voter pour le meilleur message
+et d'intégrer un pseudonyme
